@@ -5,8 +5,8 @@ python_version = "3.12"
 exposed_port = 8000
 
 [tool.fal.apps.simple_app.image]
-dockerfile = "Dockerfile"
-entrypoint = ["python", "/app/simple_app.py"]
+dockerfile = "Dockerfile.simple_app"
+entrypoint = ["/app/simple_app"]
 cmd = ["--host", "0.0.0.0", "--port", "8000"]
 
 [tool.fal.apps.simple_func]
