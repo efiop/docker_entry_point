@@ -1,7 +1,7 @@
-FROM debian:bookworm-slim
+FROM python:3.14-slim-bookworm
 
 WORKDIR /app
-COPY simple_app.py /app/simple_app.py
 COPY simple_func.py /app/simple_func.py
 
-EXPOSE 8000
+ENTRYPOINT ["python", "/app/simple_func.py"]
+CMD ["--name", "Docker"]

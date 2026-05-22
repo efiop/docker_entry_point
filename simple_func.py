@@ -11,6 +11,9 @@ def main() -> None:
 
     print(f"Hello, {args.name}!", flush=True)
     print(f"Python version: {sys.version}", flush=True)
+    import time
+    time.sleep(30)
+    print("done", flush=True)
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 # Docker entry point fal example
 
-Small test repo for image-only fal apps that run a Docker command through
-`[tool.fal.apps.<name>.image]` `entrypoint` and `cmd`.
+Small test repo for image-only fal apps that run the command configured in each
+Dockerfile's `ENTRYPOINT` and `CMD`.
 The app config does not set `python_version`; fal injects the wrapper runtime
 version internally.
 

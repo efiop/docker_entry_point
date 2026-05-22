@@ -11,3 +11,5 @@ WORKDIR /app
 COPY --from=build /src/simple_app /app/simple_app
 
 EXPOSE 8000
+ENTRYPOINT ["/app/simple_app"]
+CMD ["--host", "0.0.0.0", "--port", "8000"]
